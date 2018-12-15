@@ -1,6 +1,6 @@
 const express = require('express')
-const request = require('request-promise-native')
-request = request.defaults({ resolveWithFullResponse: true })
+let requestPromise = require('request-promise-native')
+let request = requestPromise.defaults({ resolveWithFullResponse: true })
 const SERVER = express()
 SERVER.use(require('body-parser').json()); // for parsing application/json
 // CORS requirement to support OPTIONS and special headers
