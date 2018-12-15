@@ -1,0 +1,20 @@
+{
+    "name": "xotabu4-cors-forwarder",
+    "version": "1.0.0",
+    "description": "Backend for bypassing CORS restriction in browsers",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "start-forever": "forever -l log.log -o log.log -e log.log index.js",
+        "stop": "forever stopall"
+    },
+    "dependencies": {
+        "express": "4.16.3",
+        "body-parser": "1.18.3",
+        "request": "2.88.0",
+        "request-promise-native": "1.0.5",
+        "forever": "0.15.3"
+    },
+    "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
+    "license": "MIT"
+}
