@@ -15,7 +15,7 @@ SERVER.post('/', async (req, res) => {
     console.log(req.headers)
     console.log('===BODY===')
     console.log(req.body)
-    const proxiedResponse
+    let proxiedResponse
     try {
         proxiedResponse = await request(req.body)
         console.log('===RESPONSE===')
